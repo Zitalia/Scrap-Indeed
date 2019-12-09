@@ -35,8 +35,11 @@ def recherchedescrap(URLderecherche) :
         for data in jobtitle :
             onejob = data.getText()
             onelink = data.get_attribute_list('href')[0]
-        for data in joblocation:
-            onelocation = data.getText()
+        if joblocation:
+            for data in joblocation:
+                onelocation = data.getText()
+        else:
+            onelocation = "notfound"
         for data in jobcompany:
             onecompany = data.getText()
         for data in jobdesc:
@@ -64,7 +67,7 @@ def recherchedescrap(URLderecherche) :
         reclames.append(unereclame)
 
 
-    with open('names.csv', 'w', newline='') as csvfile:
+    with open('names.csv', 'a', newline='') as csvfile:
         fields = ['entreprise', 'poste', 'desc', 'lieu', 'depuis', 'sponso', 'url']
         writer = csv.DictWriter(csvfile, fieldnames = fields)
         lolilol = []
