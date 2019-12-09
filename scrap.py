@@ -8,7 +8,7 @@ import csv
 import urllib.request
 
 def recherchedescrap(URLderecherche) :
-    with urllib.request.urlopen(URLderecherche.get()) as url:
+    with urllib.request.urlopen(URLderecherche) as url:
         s = url.read()
 
     soup = BeautifulSoup( s , 'html.parser')

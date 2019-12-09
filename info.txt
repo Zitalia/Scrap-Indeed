@@ -5,3 +5,7 @@
 
 
 BS4 ne fonctionne pas encore en version 3.8.0 de python, tourner en 3.7.2/.4
+
+
+
+Lien type: https://lu.indeed.com/jobs?l=Esch-sur-Alzette&sort=date&start=10
