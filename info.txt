@@ -1,0 +1,7 @@
+
+
+///!WARNING!\\\
+\\\!WARNING!///
+
+
+BS4 ne fonctionne pas encore en version 3.8.0 de python, tourner en 3.7.2/.4
