@@ -2,7 +2,7 @@
 from scrap import *
 
 
-def recherchegroupe(lelien) :
+def recherchegroupe(lelien, filenames) :
     URLderecherche = lelien.get()
     #Fonctionne sans conditions, avec 1, 2 mais pas 3 
     URLderecherche = URLderecherche.split("&")
@@ -28,7 +28,9 @@ def recherchegroupe(lelien) :
             del URLderecherche[-1]
         print(urlcomplete)
 
-        recherchedescrap(urlcomplete)
+        nomfichier = filenames.get()
+
+        recherchedescrap(urlcomplete, nomfichier)
 
         pagination +=1
 

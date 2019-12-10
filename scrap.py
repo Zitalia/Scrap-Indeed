@@ -7,7 +7,7 @@ from jobobject import *
 import csv
 import urllib.request
 
-def recherchedescrap(URLderecherche) :
+def recherchedescrap(URLderecherche, filesnames) :
     with urllib.request.urlopen(URLderecherche) as url:
         s = url.read()
 
@@ -66,8 +66,9 @@ def recherchedescrap(URLderecherche) :
 
         reclames.append(unereclame)
 
-
-    with open('names.csv', 'a', newline='') as csvfile:
+        namefich = filesnames
+        nameexcel = namefich + ".csv"
+    with open(nameexcel, 'a', newline='') as csvfile:
         fields = ['entreprise', 'poste', 'desc', 'lieu', 'depuis', 'sponso', 'url']
         writer = csv.DictWriter(csvfile, fieldnames = fields)
         lolilol = []

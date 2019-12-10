@@ -29,7 +29,7 @@ namefichier = Entry(framesaisie, textvariable = namefich , bg="black", fg="green
 Framebouton = Frame(letout, bg="green", borderwidth=2, relief=GROOVE)
 Framebouton.pack(side=RIGHT, padx=10, pady=10)
 
-Button(Framebouton, text ='Recherchez', command = lambda : recherchegroupe(valueurl), relief=SUNKEN, background ='black', fg="white").pack(side=TOP, padx=5, pady=5)
+Button(Framebouton, text ='Recherchez', command = lambda : recherchegroupe(valueurl, namefich), relief=SUNKEN, background ='black', fg="white").pack(side=TOP, padx=5, pady=5)
 Button(Framebouton, text ='Réinitialisé', command = lambda : entreeurl.delete(0, 'end'), relief=SUNKEN, background ='black', fg="white").pack( padx=5, pady=5)
 Button(Framebouton, text ='Quitter', command = fenetre.quit, relief=SUNKEN, background ='black', fg="white").pack(side=BOTTOM, padx=5, pady=5)
 

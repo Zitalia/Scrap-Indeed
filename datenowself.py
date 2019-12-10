@@ -7,5 +7,5 @@ def avoirladate() :
     month = now.strftime("%m")
     day = now.strftime("%d")
     time = now.strftime("%H:%M:%S")
-    date_time = now.strftime("%m/%d/%Y, %H:%M:%S")
+    date_time = now.strftime("%m-%d-%Y_%H-%M-%S")
     return date_time
