@@ -23,7 +23,7 @@ def recherchegroupe(lelien) :
             URLderecherche.append(paginurl)
         #j'enregistre l'url dont j'ai besoin
         urlcomplete= "&".join(URLderecherche)
-        # je vide la derniere partie qui contient la pagination pour la remplacer dans le prochain
+        # je vide la derniere partie qui contient la pagination pour la remplacer dans la prochaine loop
         if len(URLderecherche) > 2 :
             del URLderecherche[-1]
         print(urlcomplete)
